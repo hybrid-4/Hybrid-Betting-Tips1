@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hybrid Prediction Football Tips</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .top-controls {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      background-color: #222;
+      color: white;
+      width: 220px;
+    }
+
+    .menu-toggle {
+      font-size: 26px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #000;
+      padding: 10px 20px;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 10px 0;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .dropdown-menu a:hover {
+      color: #25D366;
+    }
+
+    .main-content {
+      padding: 20px;
+    }
+
+    .content-section {
+      display: none;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 14px 30px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .whatsapp-button img {
+      margin-right: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background-color: white;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    th {
+      background-color: #222;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    img.about-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Hybrid Prediction Football Tips</div>
+  </header>
+
+  <div class="top-controls">
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+  </div>
+
+  <div class="dropdown-menu" id="dropdownMenu">
+    <a onclick="showContent('home')">Home</a>
+    <a onclick="showContent('about')">About Us</a>
+    <a onclick="showContent('privacy')">Privacy Policy</a>
+    <a onclick="showContent('terms')">Terms and Conditions</a>
+    <a onclick="showContent('banker')">Banker Bets of the Day</a>
+    <a onclick="showContent('tomorrow')">Tomorrow Predictions</a>
+    <a onclick="showContent('basketball')">Basketball Predictions</a>
+    <a onclick="showContent('contact')">Contact Us</a>
+    <a onclick="showContent('latest')">Latest Posts</a>
+  </div>
+
+  <div class="main-content">
+    <div id="home" class="content-section active">
+      <a class="whatsapp-button" href="https://chat.whatsapp.com/DkDVjdFtPvtGUAQ2Q0RV5k" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp Icon" />
+        Join Our WhatsApp Group
+      </a>
+
+      <h2>Today’s Football Tips</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Match</th>
+            <th>Tip</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Man City vs Aston</td>
+            <td>Over 2.5 Goals</td>
+          </tr>
+          <tr>
+            <td>Real Madrid vs Sevilla</td>
+            <td>Home Win</td>
+          </tr>
+          <tr>
+            <td>PSG vs Marseille</td>
+            <td>BTTS</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="about" class="content-section">
+      <img src="https://via.placeholder.com/800x300?text=Hybrid+Prediction+Image" alt="About Us" class="about-img" />
+      <h2>About Us</h2>
+      <p><strong>Company Name:</strong> Hybrid Prediction</p>
+      <p><strong>About Us:</strong><br>
+      Hybrid Prediction is a cutting-edge sports prediction platform that leverages advanced data analytics and expert insights to provide accurate and reliable forecasts for football and basketball matches. Our team of seasoned sports analysts and data scientists meticulously analyze current team statistics, past results, and injury reports to deliver valuable tips and insights from top leagues worldwide.</p>
+
+      <p><strong>Mission:</strong><br>
+      Our mission is to empower sports enthusiasts with actionable intelligence, enabling them to make informed decisions and elevate their sports experience. We strive to provide accurate predictions, foster transparency, and maintain the highest level of integrity in our operations.</p>
+
+      <p><strong>Vision:</strong><br>
+      Hybrid Prediction aims to become the trusted authority in sports predictions, renowned for our unwavering commitment to accuracy, reliability, and innovation. We continuously refine our algorithms and analysis techniques to ensure the highest prediction quality, ultimately enriching the sports experience for our users.</p>
+
+      <p><strong>Core Values:</strong></p>
+      <ul>
+        <li><em>Accuracy:</em> We prioritize accuracy in our predictions, ensuring our users receive reliable information.</li>
+        <li><em>Integrity:</em> We maintain the highest level of integrity in all aspects of our operations.</li>
+        <li><em>Transparency:</em> We provide clear explanations for our predictions and maintain transparency in our methods.</li>
+        <li><em>Continuous Improvement:</em> We strive to enhance our algorithms and analysis techniques, ensuring the highest prediction quality.</li>
+        <li><em>User-Centric Approach:</em> We prioritize user needs and satisfaction, delivering the best possible experience.</li>
+      </ul>
+
+      <p><strong>Team:</strong><br>
+      Our team comprises experienced sports analysts and data scientists who share a passion for sports and possess in-depth knowledge of the game. Their expertise enables us to deliver accurate predictions and valuable insights, setting us apart as a trusted leader in sports predictions.</p>
+    </div>
+
+    <div id="privacy" class="content-section">
+      <h2>Privacy Policy</h2>
+      <p>We respect your privacy and ensure your data is never shared with third parties.</p>
+    </div>
+
+    <div id="terms" class="content-section">
+      <h2>Terms and Conditions</h2>
+      <p>Use our predictions as guidance only. We are not responsible for any losses.</p>
+    </div>
+
+    <div id="banker" class="content-section">
+      <h2>Banker Bets of the Day</h2>
+      <p>Our top value bets selected with confidence from various leagues.</p>
+    </div>
+
+    <div id="tomorrow" class="content-section">
+      <h2>Tomorrow Predictions</h2>
+      <p>Plan ahead with our early bird tips for tomorrow's top matches.</p>
+    </div>
+
+    <div id="basketball" class="content-section">
+      <h2>Basketball Predictions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Match</th>
+            <th>Tip</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lakers vs Heat</td>
+            <td>Over 210.5 Points</td>
+          </tr>
+          <tr>
+            <td>Bulls vs Warriors</td>
+            <td>Golden State Win</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="contact" class="content-section">
+      <h2>Contact Us</h2>
+      <p>Need help? Contact us via our WhatsApp group or drop us a message.</p>
+    </div>
+
+    <div id="latest" class="content-section">
+      <h2>Latest Posts</h2>
+      <p>Stay up to date with our latest betting tips and strategy articles.</p>
+    </div>
+  </div>
+<footer style="background-color: #000; color: #fff; text-align: center; padding: 15px; font-size: 14px;">
+  &copy; 2025 Hybrid Prediction. All Rights Reserved.
+</footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function showContent(id) {
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+      document.getElementById('dropdownMenu').style.display = 'none';
+    }
+  </script>
+
+</body>
+  </html>
